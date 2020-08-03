@@ -1,0 +1,10 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int a=5;
+    if(a<10) printf("10보다 a가 작습니다.\n");
+    else printf("10보다 같거나 크군요.\n");
+    
+    return 0;
+}
