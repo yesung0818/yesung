@@ -1,0 +1,16 @@
+#include <stdio.h>
+int add(int a,int b){
+    int result;
+    result = a+b;
+    return result;
+}
+int main(){
+    int sum, x,y;
+    printf("숫자를 입력하세요:");
+    scanf("%d",&x);
+    printf("숫자를 입력하세요:");
+    scanf("%d",&y);
+    sum = add(x,y);
+    printf("두 수의 합은!!:%d",sum);
+    return 0;
+}
