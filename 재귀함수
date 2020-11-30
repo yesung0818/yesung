@@ -1,0 +1,14 @@
+#include <stdio.h>
+int sum(int n){
+    if(n==1)
+            return 1;
+    else
+            return (n+sum(n-1));
+}
+void main(void){
+    int n, hap;
+    printf("정수를 입력하세요:");
+    scanf("%d",&n);
+    hap = sum(n);
+    printf("1+2+...+%d= %d\n", n, hap);
+}
