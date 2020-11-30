@@ -1,0 +1,13 @@
+#include <stdio.h>
+float circle(int radius){
+    float area;
+    area = 3.14*radius*radius;
+    return area;
+}
+int main(){
+    int x;
+    printf("반지름을 입력하세요.:");
+    scanf("%d",&x);
+    printf("원의 너비는!:%.2f",circle(x));
+    return 0;
+}
