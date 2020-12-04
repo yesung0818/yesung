@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    int sum;
+    printf("두 개의 정수 입력:");
+    scanf("%d%d", &a, &b);
+    if (a > b)
+    {
+        
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+     printf("%d부터%d까지의 합 =", a, b);
+    for (sum = 0; a <= b; a++)
+    {
+        sum += a;
+    }
+    printf("%d\n", sum);
+    return 0;
+}
