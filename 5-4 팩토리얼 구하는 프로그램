@@ -1,0 +1,15 @@
+#include <stdio.h>
+int factorial(int a_num)
+{
+    int i, result =1;
+    for (i=2; i<=a_num; i++) result *= i;
+    return result;
+}
+int main()
+{
+    int i;
+    for (i=1; i<=10; i++) {
+        printf("%2d!=%d\n", i, factorial(i));
+    }
+    return 0;
+}
